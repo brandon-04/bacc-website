@@ -1,0 +1,141 @@
+@font-face {
+    font-family: GermaniaOne;
+    src: url(fonts/Germania_One/GermaniaOne-Regular.ttf);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --font-color: #eaf2fa;
+    --header-color: #8685DB;
+}
+
+#header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 10%;
+    width: 100%;
+    background-color: var(--header-color);
+
+    position: fixed;
+    color: var(--font-color);
+}
+
+#header > a {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    width: 10%;
+
+    font-family: GermaniaOne;
+    font-size: 1.75rem;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+a:hover {
+    color: burlywood;
+}
+
+#main-title {
+    font-size: 3rem;
+    font-family: GermaniaOne;
+
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#work-experience, #hobbies, #education, #projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+
+#work-experience {
+    background-color: #f7c0db;
+    flex-direction: column;
+}
+#work-experience > div {
+    display: flex;
+    justify-content: space-between;
+
+    height: 70%;
+    width: 80%;
+}
+#work-experience-img {
+    display: flex;
+
+    height: 100%;
+    width: 50%;
+    background: url(img/IMG_0876.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    border-radius: 25px;
+    border: thin beige solid;
+}
+
+#work-experience-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    align-items: center;
+    text-align: center;
+
+    width: 50%;
+    height: 100%;
+
+    font-family: GermaniaOne;
+    font-size: 2rem;
+}
+
+#hobbies {
+    background-color: #c9c9ee;
+    flex-direction: row;
+}
+
+#hobbies-photography, #hobbies-climbing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    width: 50%;
+    height: 70%;
+
+    border: thin black solid;
+
+    font-family: GermaniaOne;
+}
+
+#photography {
+    height: 75%;
+}
+
+
+#education {
+    background-color: #d5c2eb;
+}
+
+#projects {
+    background-color: #d1b1c8;
+}
+
